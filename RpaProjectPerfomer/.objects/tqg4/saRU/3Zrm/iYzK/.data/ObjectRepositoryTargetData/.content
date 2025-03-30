@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="aeTrhk4Q00i8ZAPAvY96Og" Reference="5VsBlbiBdkqguEHwIfsIUg/iYzK6K6MQUqh0H5GsXxX7w" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/c/677d23bb-229c-8013-a69d-c4cd9cf9c6f2" CVScreenId="3eb67121-b0ec-456a-a96e-fc644a7651c6" DesignTimeRectangle="960, 1196, 95, 36" DesignTimeScaleFactor="1" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;form&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;span' tag='SPAN' innertext='Trimite' visibleinnertext='Trimite' /&gt;" Guid="af327578-d635-4b68-830c-4e55d5f7d3b0" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Invoice Details' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="8196d4135bddee5cefdacd18136e9a2e.png" xmlns="">0q_R643tAR0GAWIKzVcVVZA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Inbox - rpa-project@outlook.com - Outlook",
+  "Type": "Screen",
+  "Id": "cBM-u9311E2cRcmJn8Q5xA",
+  "Reference": "5VsBlbiBdkqguEHwIfsIUg/cBM-u9311E2cRcmJn8Q5xA",
+  "ParentRef": "5VsBlbiBdkqguEHwIfsIUg/qm-TrKAcAUCB6rEO3VCTlA",
+  "Created": "2025-01-07T16:26:13.7805869Z",
+  "Updated": "2025-01-07T16:26:13.7805869Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

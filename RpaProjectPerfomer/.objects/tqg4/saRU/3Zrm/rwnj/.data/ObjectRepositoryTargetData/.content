@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="tM7RCAoIiECxtW2K41vjCw" Reference="5VsBlbiBdkqguEHwIfsIUg/rwnjIr_en0Wy108KEo18Pg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="chatgpt.com/c/677d23bb-229c-8013-a69d-c4cd9cf9c6f2" DesignTimeRectangle="648, 141, 640, 183" DesignTimeScaleFactor="1" FuzzySelectorArgument="&lt;webctrl class='idZHHb' tag='DIV' type='' aaname='' check:innerText='Invoice Details&amp;#xA;Răspunsul tău a fost înregistrat.&amp;#xA;Trimite alt răspuns' /&gt;" Guid="b74b1ec0-fb66-4d12-b210-ed69597e72d8" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Invoice Details' /&gt;" SearchSteps="FuzzySelector" Version="V5" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <TargetAnchorable.Anchors>
+        <scg:List x:TypeArguments="ITarget" Capacity="1">
+          <Target CVScreenId="58bd4e0d-6c7d-49a9-9e6e-e3e9431a6e4b" CvTextArea="672, 180, 242, 30" CvTextArgument="Invoice Details" CvType="Text" DesignTimeRectangle="673, 178, 590, 56" FuzzySelectorArgument="&lt;webctrl aria-role='heading' tag='DIV' type='' class='pdLVYe LgNcQe' aaname='Invoice Details' check:innerText='Invoice Details' /&gt;" Guid="5899f2e0-079e-4214-a777-3428aae418b1" SearchSteps="FuzzySelector, CV" />
+        </scg:List>
+      </TargetAnchorable.Anchors>
+      <imageRef attrName="InformativeScreenshot" originalValue="31c5a901ab256982c3abb5570c7d6234.png" xmlns="">0QuA2cbt2YEuohjmNEckiPA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">Click</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

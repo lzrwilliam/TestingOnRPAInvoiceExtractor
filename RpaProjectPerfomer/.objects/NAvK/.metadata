@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Inbox - rpa-project@outlook.com - Outlook",
+  "Type": "App",
+  "Id": "NAvKBBA1gEqpr_QeFJ2dwg",
+  "Reference": "5VsBlbiBdkqguEHwIfsIUg/NAvKBBA1gEqpr_QeFJ2dwg",
+  "Created": "2025-01-07T16:26:13.5626874Z",
+  "Updated": "2025-01-07T16:26:13.5626874Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

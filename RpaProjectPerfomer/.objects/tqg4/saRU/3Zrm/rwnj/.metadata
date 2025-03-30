@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Element 'Invoice Details'",
+  "Type": "Element",
+  "Id": "rwnjIr_en0Wy108KEo18Pg",
+  "Reference": "5VsBlbiBdkqguEHwIfsIUg/rwnjIr_en0Wy108KEo18Pg",
+  "ParentRef": "5VsBlbiBdkqguEHwIfsIUg/3Zrm8goeZkubbQASn4ikwA",
+  "Created": "2025-01-07T13:13:53.3120562Z",
+  "Updated": "2025-01-07T13:13:53.3120562Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

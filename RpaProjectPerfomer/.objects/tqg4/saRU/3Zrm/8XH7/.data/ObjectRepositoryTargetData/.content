@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="VFAIkZKQ-0mVR-MrIk_r0Q" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="docs.google.com/forms/d/e/1FAIpQLSfwO_KrS_9c2mrfI8GMXFBJFZqBQUXwrbBiYoizPdbWrtMArA/viewform" CVScreenId="eee6c3e5-bcb9-4a00-8a73-572a3a892bac" CvTextArea="634, 885, 132, 17" CvTextArgument="Ordered Items" CvType="Text" DesignTimeRectangle="635, 882, 131, 26" DesignTimeScaleFactor="1.100000023841858" ElementType="Text" FuzzySelectorArgument="&lt;webctrl parentid='i38' tag='SPAN' type='' class='M7eMe' aaname='Ordered Items' check:innerText='Ordered Items' /&gt;" Guid="c09e0d20-846b-4ec3-b420-d3fbf27eea4b" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Invoice Details' /&gt;" SearchSteps="FuzzySelector, CV" Version="V5" Visibility="Interactive">
+      <imageRef attrName="InformativeScreenshot" originalValue="4535c2d596ed33c7b59058c6975e0086.png" xmlns="">09SXEa8orf0Oh36JY4oQNiA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">MouseScrollSearchedElement</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>

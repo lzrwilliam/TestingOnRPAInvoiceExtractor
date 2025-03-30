@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-16"?>
+<ObjectRepositoryTargetData ContentHash="-GukRL2Ad0-QpCAxOpcGgw" Reference="5VsBlbiBdkqguEHwIfsIUg/Ox_UcX9kz0OuJXBK681dgg" xmlns="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <ObjectRepositoryTargetData.Data>
+    <TargetAnchorable x:Key="TargetAnchorable" BrowserURL="docs.google.com/forms/d/e/1FAIpQLSfwO_KrS_9c2mrfI8GMXFBJFZqBQUXwrbBiYoizPdbWrtMArA/viewform" CVScreenId="cbcaa34e-34ce-487b-bbea-de6a9a2f034d" DesignTimeRectangle="155, 505, 324, 26" DesignTimeScaleFactor="1.100000023841858" ElementType="InputBox" FullSelectorArgument="&lt;webctrl tag='INPUT' type='text' parentid='mG61Hd' idx='1' /&gt;" Guid="391327d1-4864-4620-b338-78f1b635bd1a" IsResponsive="True" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Invoice Details' /&gt;" SearchSteps="Selector" Version="V5" Visibility="Interactive" WaitForReadyArgument="Complete">
+      <imageRef attrName="InformativeScreenshot" originalValue="07977c1bc79b43d71039738ef819ebe1.png" xmlns="">0wR3gT3fV6UegWKa3-RURtA</imageRef>
+    </TargetAnchorable>
+    <x:String x:Key="ActivityType">TypeInto</x:String>
+  </ObjectRepositoryTargetData.Data>
+</ObjectRepositoryTargetData>
