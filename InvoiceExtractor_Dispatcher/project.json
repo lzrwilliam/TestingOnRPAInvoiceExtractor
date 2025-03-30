@@ -9,7 +9,7 @@
     "UiPath.Mail.Activities": "[1.24.11]",
     "UiPath.MicrosoftOffice365.Activities": "[2.8.22]",
     "UiPath.PDF.Activities": "[3.21.0-preview]",
-    "UiPath.System.Activities": "[24.10.7]",
+    "UiPath.System.Activities": "25.2.3",
     "UiPath.Testing.Activities": "[24.10.3]",
     "UiPath.UIAutomation.Activities": "[24.12.1-preview]"
   },
@@ -88,6 +88,13 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "a9b3846b-aa05-40f3-b14b-afca50c6cb59",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Components_TestCases\\TC_FilterProcess.xaml"
       }
     ],
     "saveToCloud": false
