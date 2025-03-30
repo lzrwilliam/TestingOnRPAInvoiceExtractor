@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Outlook - Screen",
+  "Type": "Screen",
+  "Id": "SDWIPW56FEKxQX-sBdsgFA",
+  "Reference": "iUSVRQkabECheKtdeU2hyw/SDWIPW56FEKxQX-sBdsgFA",
+  "ParentRef": "iUSVRQkabECheKtdeU2hyw/pTviteq6H0yFQwiStfq_jw",
+  "Created": "2025-01-05T13:03:54.7468376Z",
+  "Updated": "2025-01-05T13:03:54.7468376Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

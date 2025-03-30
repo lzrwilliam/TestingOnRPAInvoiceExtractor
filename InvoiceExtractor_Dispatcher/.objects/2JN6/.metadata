@@ -1,0 +1,15 @@
+﻿{
+  "Name": "Outlook",
+  "Type": "App",
+  "Id": "2JN6fh1I1UyFWJcFnsRt2Q",
+  "Reference": "iUSVRQkabECheKtdeU2hyw/2JN6fh1I1UyFWJcFnsRt2Q",
+  "Created": "2025-01-05T13:03:54.711532Z",
+  "Updated": "2025-01-05T13:04:09.6661711Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ],
+  "UpdatedBy": [
+    "UiPath.Platform, Version=24.11.1.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

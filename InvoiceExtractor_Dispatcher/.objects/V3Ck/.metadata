@@ -1,0 +1,12 @@
+﻿{
+  "Name": "Open PDF",
+  "Type": "App",
+  "Id": "V3CkbsUdAEmLrwkM4On5xA",
+  "Reference": "iUSVRQkabECheKtdeU2hyw/V3CkbsUdAEmLrwkM4On5xA",
+  "Created": "2025-01-05T23:05:56.3211256Z",
+  "Updated": "2025-01-05T23:05:56.3211256Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.0.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}
