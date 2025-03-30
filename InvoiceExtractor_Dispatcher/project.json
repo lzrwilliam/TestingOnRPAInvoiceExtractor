@@ -91,10 +91,10 @@
       },
       {
         "editingStatus": "InProgress",
-        "testCaseId": "a9b3846b-aa05-40f3-b14b-afca50c6cb59",
+        "testCaseId": "0b145e81-bcd5-4476-8ab6-8a3425b38be4",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "Components_TestCases\\TC_FilterProcess.xaml"
+        "fileName": "Components_TestCases\\TC_FilterProcess_Mock.xaml"
       }
     ],
     "saveToCloud": false
