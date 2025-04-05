@@ -121,6 +121,46 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Components_TestCases/TC_ExtractInvoiceDetails_Mock.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "NoPages&Sequence_9",
+        "exceptionObject&Sequence_1",
+        "Finished&Sequence_1",
+        "InvoiceDetails&Sequence_1",
+        "TextPdf&Sequence_1",
+        "PDFText&Sequence_1",
+        "OutputFilePath&Sequence_4",
+        "IsPDF&Sequence_4",
+        "Items&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PdfPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Mocks/Components/ExtractInvoiceDetails_mock.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "in_strComponentName&Sequence_1",
+        "pdfText&Sequence_1",
+        "orderedItems&Sequence_1",
+        "boolWordExists&Sequence_14",
+        "intNumericWords&Sequence_14",
+        "strProductName&Sequence_14",
+        "strQty&Sequence_14"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "out_PDFText",
+        "in_InvoicePath",
+        "out_Details"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
