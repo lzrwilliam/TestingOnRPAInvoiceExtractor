@@ -161,6 +161,68 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Mocks/Components/FilterProcess_mock_2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InvoicesPath&Flowchart_1",
+        "InvoiceDetails&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Email",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/FilterProcess/FilterProcess_Scenario1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "Emails&Sequence_1",
+        "exceptionObject&Sequence_1",
+        "variable1&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_AccountName",
+        "in_MailFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/FilterProcess/FilterProcess_Scenario2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "variable1&Sequence_1",
+        "exceptionObject&Sequence_1",
+        "Config&Sequence_1",
+        "Emails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_MailFolder",
+        "in_AccountName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
