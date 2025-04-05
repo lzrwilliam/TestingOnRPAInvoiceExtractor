@@ -109,6 +109,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario1.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5d9b5407-abb4-4655-a6c4-0b3ef6780092",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario2.xaml"
       }
     ],
     "saveToCloud": false

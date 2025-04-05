@@ -11,6 +11,10 @@
     {
       "mockFilePath": "Mocks\\Components\\FilterProcess_mock_1.xaml",
       "sourceWorkflowPath": "Components\\FilterProcess.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Components\\FilterProcess_mock_2.xaml",
+      "sourceWorkflowPath": "Components\\FilterProcess.xaml"
     }
   ]
 }
