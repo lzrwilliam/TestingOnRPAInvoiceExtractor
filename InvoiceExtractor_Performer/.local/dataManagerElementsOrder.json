@@ -33,11 +33,57 @@
         "Status&Sequence_40",
         "dtStatusData&Sequence_40",
         "Details&Sequence_40",
-        "SheetsList&Sequence_40"
+        "SheetsList&Sequence_40",
+        "strComponentName&Sequence_1",
+        "FormPath&Sequence_1"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_OrchestratorQueueName",
         "in_OrchestratorQueueFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/CompleteForm.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strComponentName&Sequence_1",
+        "FormPath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_TransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/MoveCreateVendorSubfolder.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strComponentName&Sequence_1",
+        "Email&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_EmailID",
+        "in_VendorName",
+        "in_Account",
+        "in_ParentFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Components/ProcessInvoice.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Email&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Vendors",
+        "in_TransactionItem",
+        "in_Config"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

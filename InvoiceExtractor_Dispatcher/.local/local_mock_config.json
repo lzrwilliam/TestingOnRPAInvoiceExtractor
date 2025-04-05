@@ -4,5 +4,8 @@
   },
   "Mocks\\Components\\ExtractInvoiceDetails_mock.xaml": {
     "sourceWorkflowHash": "6dcfdf14a909cb939c9f0d17b7b878d6ca13a4b03340c6e0400ba111f05ab708"
+  },
+  "Mocks\\Components\\FilterProcess_mock_1.xaml": {
+    "sourceWorkflowHash": "1f5a35e5eb0b566365a02cf16595c6414b401aa87ce566abcb44ca82bbc1ae75"
   }
 }
