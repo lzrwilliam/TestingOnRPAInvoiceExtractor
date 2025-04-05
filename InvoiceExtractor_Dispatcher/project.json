@@ -95,6 +95,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Components_TestCases\\TC_FilterProcess_Mock.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "cac9cb8b-c998-44b3-98e6-025645dfc808",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Components_TestCases\\TC_ExtractInvoiceDetails_Mock.xaml"
       }
     ],
     "saveToCloud": false
