@@ -88,13 +88,6 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
-      },
-      {
-        "editingStatus": "InProgress",
-        "testCaseId": "a9b3846b-aa05-40f3-b14b-afca50c6cb59",
-        "testCaseType": "TestCase",
-        "executionTemplateInvokeIsolated": false,
-        "fileName": "Components_TestCases\\TC_FilterProcess.xaml"
       }
     ],
     "saveToCloud": false
