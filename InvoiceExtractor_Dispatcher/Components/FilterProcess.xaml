@@ -95,7 +95,7 @@
       <AssemblyReference>WindowsBase</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="FilterProcess" sap:VirtualizedContainerService.HintSize="1390,734.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="FilterProcess" sap:VirtualizedContainerService.HintSize="1202,472" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="InvoicesPath" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="InvoiceDetails" />
