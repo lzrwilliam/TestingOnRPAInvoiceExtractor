@@ -10,5 +10,8 @@
   },
   "Mocks\\Components\\FilterProcess_mock_2.xaml": {
     "sourceWorkflowHash": "1f5a35e5eb0b566365a02cf16595c6414b401aa87ce566abcb44ca82bbc1ae75"
+  },
+  "Mocks\\Components\\FilterProcess_mock_3.xaml": {
+    "sourceWorkflowHash": "1f5a35e5eb0b566365a02cf16595c6414b401aa87ce566abcb44ca82bbc1ae75"
   }
 }

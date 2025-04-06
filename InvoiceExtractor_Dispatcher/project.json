@@ -88,6 +88,25 @@
         "testCaseType": "TestCase",
         "executionTemplateType": "Local",
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "0c16b8ea-0e3e-4d4c-9055-edf126b47840",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario3.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "214ce245-f521-4585-9afb-e87de8ae6eee",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario2.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "948f5b89-9c30-4a62-9133-7b2667fc66a2",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario1.xaml"
       }
     ],
     "saveToCloud": false
