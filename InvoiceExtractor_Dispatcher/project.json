@@ -116,7 +116,7 @@
         "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario4.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "d0336026-c954-4f86-a194-4babf5f42e62",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
