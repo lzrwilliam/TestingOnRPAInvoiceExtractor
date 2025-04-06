@@ -165,8 +165,17 @@
     {
       "Path": "Tests/FilterProcess/FilterProcess_Scenario5.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [],
-      "ArgumentsSectionElementsOrder": [],
+      "VariablesSectionElementsOrder": [
+        "InvoiceDetails&Sequence_1",
+        "Config&Sequence_1",
+        "Items&Sequence_4",
+        "Emails&Sequence_4",
+        "exceptionObject&Sequence_4",
+        "Finished&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PdfPath"
+      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
@@ -178,6 +187,8 @@
         "InvoiceDetails&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [
+        "out_InvoiceDetails",
+        "in_PdfPath",
         "in_Email",
         "in_Config"
       ],
