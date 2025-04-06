@@ -101,14 +101,10 @@
       <AssemblyReference>System.Linq.Queryable</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="FilterProcess_Scenario5" sap:VirtualizedContainerService.HintSize="1185,1015" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="FilterProcess_Scenario5" sap:VirtualizedContainerService.HintSize="1692,1015" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
-      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="InvoiceDetails">
-        <Variable.Default>
-          <VisualBasicValue x:TypeArguments="scg:Dictionary(x:String, x:Object)" ExpressionText="new Dictionary (Of String, Object)" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Default="[new Dictionary (Of String, Object)]" Name="InvoiceDetails" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
