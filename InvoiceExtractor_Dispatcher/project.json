@@ -107,6 +107,20 @@
         "testCaseId": "948f5b89-9c30-4a62-9133-7b2667fc66a2",
         "testCaseType": "TestCase",
         "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario1.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "38489b63-dd29-4407-a230-0bc49e5b2f14",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario4.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "d0336026-c954-4f86-a194-4babf5f42e62",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario5.xaml"
       }
     ],
     "saveToCloud": false
