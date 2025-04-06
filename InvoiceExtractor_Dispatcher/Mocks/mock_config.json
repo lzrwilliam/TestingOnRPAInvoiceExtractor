@@ -1,0 +1,20 @@
+{
+  "mockedWorkflows": [
+    {
+      "mockFilePath": "Mocks\\Components\\FilterProcess_mock.xaml",
+      "sourceWorkflowPath": "Components\\FilterProcess.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Components\\ExtractInvoiceDetails_mock.xaml",
+      "sourceWorkflowPath": "Components\\ExtractInvoiceDetails.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Components\\FilterProcess_mock_1.xaml",
+      "sourceWorkflowPath": "Components\\FilterProcess.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Components\\FilterProcess_mock_2.xaml",
+      "sourceWorkflowPath": "Components\\FilterProcess.xaml"
+    }
+  ]
+}

@@ -90,11 +90,32 @@
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
       },
       {
-        "editingStatus": "InProgress",
-        "testCaseId": "a9b3846b-aa05-40f3-b14b-afca50c6cb59",
+        "editingStatus": "Publishable",
+        "testCaseId": "0b145e81-bcd5-4476-8ab6-8a3425b38be4",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
-        "fileName": "Components_TestCases\\TC_FilterProcess.xaml"
+        "fileName": "Components_TestCases\\TC_FilterProcess_Mock.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "cac9cb8b-c998-44b3-98e6-025645dfc808",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Components_TestCases\\TC_ExtractInvoiceDetails_Mock.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "9b9ce8ad-585f-499f-8803-858d0ae8959b",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario1.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "5d9b5407-abb4-4655-a6c4-0b3ef6780092",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario2.xaml"
       }
     ],
     "saveToCloud": false
