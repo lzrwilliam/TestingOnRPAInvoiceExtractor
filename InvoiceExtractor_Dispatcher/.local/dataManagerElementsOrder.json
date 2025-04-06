@@ -32,7 +32,39 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Components/FilterProcess.xaml",
+      "Path": "Tests/FilterProcess/FilterProcess_Scenario1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "Emails&Sequence_1",
+        "exceptionObject&Sequence_1",
+        "variable1&Sequence_6"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_AccountName",
+        "in_MailFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/FilterProcess/FilterProcess_Scenario2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Emails&Sequence_1",
+        "Config&Sequence_1",
+        "exceptionObject&Sequence_1",
+        "variable1&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_AccountName",
+        "in_MailFolder"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Mocks/Components/FilterProcess_mock.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
         "InvoicesPath&Flowchart_1",
@@ -46,13 +78,14 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Framework/Process.xaml",
+      "Path": "Mocks/Components/FilterProcess_mock_1.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "emails&Sequence_1"
+        "InvoicesPath&Flowchart_1",
+        "InvoiceDetails&Flowchart_1"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_TransactionItem",
+        "in_Email",
         "in_Config"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -78,87 +111,10 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Components_TestCases/TC_FilterProcess_Mock.xaml",
+      "Path": "Components/FilterProcess_cct.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "Items&Sequence_14",
-        "Finished&Sequence_1",
-        "exceptionObject&Sequence_1",
-        "Config&Sequence_1",
-        "Emails&Sequence_1"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_AccountName",
-        "in_MailFolder",
-        "in_FilterEmails"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Mocks/Components/FilterProcess_mock.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "InvoicesPath&Flowchart_1",
-        "InvoiceDetails&Flowchart_1"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_Email",
-        "in_Config"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Tests/GetTransactionDataTestCase.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "Config&Sequence_1",
-        "TransactionNumber&Sequence_1",
-        "TransactionItem&Sequence_1",
-        "VerificationOutput&Sequence_4"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Components_TestCases/TC_ExtractInvoiceDetails_Mock.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "NoPages&Sequence_9",
-        "exceptionObject&Sequence_1",
-        "Finished&Sequence_1",
-        "InvoiceDetails&Sequence_1",
-        "TextPdf&Sequence_1",
-        "PDFText&Sequence_1",
-        "OutputFilePath&Sequence_4",
-        "IsPDF&Sequence_4",
-        "Items&Sequence_9"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "in_PdfPath"
-      ],
-      "ConstantsSectionElementsOrder": [],
-      "AddedNamespaces": null
-    },
-    {
-      "Path": "Mocks/Components/ExtractInvoiceDetails_mock.xaml",
-      "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "in_strComponentName&Sequence_1",
-        "pdfText&Sequence_1",
-        "orderedItems&Sequence_1",
-        "boolWordExists&Sequence_14",
-        "intNumericWords&Sequence_14",
-        "strProductName&Sequence_14",
-        "strQty&Sequence_14"
-      ],
-      "ArgumentsSectionElementsOrder": [
-        "out_PDFText",
-        "in_InvoicePath",
-        "out_Details"
-      ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     }
