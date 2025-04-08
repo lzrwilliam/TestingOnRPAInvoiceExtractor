@@ -45,8 +45,7 @@
     },
     "processOptions": {
       "ignoredFiles": [
-        "Components_TestCases/TC_ExtractInvoiceDetails_Mock.xaml",
-        "Components_TestCases/TC_FilterProcess_Mock.xaml"
+        "Components_TestCases/TC_ExtractInvoiceDetails_Mock.xaml"
       ]
     },
     "fileInfoCollection": [

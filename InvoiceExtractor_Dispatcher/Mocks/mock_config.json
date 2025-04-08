@@ -1,10 +1,6 @@
 {
   "mockedWorkflows": [
     {
-      "mockFilePath": "Mocks\\Components\\FilterProcess_mock.xaml",
-      "sourceWorkflowPath": "Components\\FilterProcess.xaml"
-    },
-    {
       "mockFilePath": "Mocks\\Components\\ExtractInvoiceDetails_mock.xaml",
       "sourceWorkflowPath": "Components\\ExtractInvoiceDetails.xaml"
     },
