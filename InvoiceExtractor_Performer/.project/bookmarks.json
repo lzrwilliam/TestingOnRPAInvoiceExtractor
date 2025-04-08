@@ -1,0 +1,15 @@
+{
+  "Value": {
+    "Mocks/Components/ProcessInvoice_mock.xaml": [
+      {
+        "IsEnabled": true,
+        "Annotation": null,
+        "Id": "1765019b-0c01-4f1b-b9e6-aa88db58f790",
+        "ActivityIdRef": "Assign_2",
+        "ActivityId": "1.53",
+        "ActivityName": "Assign",
+        "IsTransient": false
+      }
+    ]
+  }
+}

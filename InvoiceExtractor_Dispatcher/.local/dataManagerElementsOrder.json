@@ -245,6 +245,26 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Components_TestCases/TC_ExtractInvoiceDetails_Mock.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "exceptionObject&Sequence_1",
+        "Finished&Sequence_1",
+        "InvoiceDetails&Sequence_1",
+        "TextPdf&Sequence_1",
+        "PDFText&Sequence_1",
+        "OutputFilePath&Sequence_4",
+        "IsPDF&Sequence_4",
+        "Items&Sequence_9",
+        "NoPages&Sequence_9"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PdfPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

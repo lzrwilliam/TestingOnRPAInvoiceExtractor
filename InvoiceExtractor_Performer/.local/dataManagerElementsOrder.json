@@ -33,9 +33,7 @@
         "Status&Sequence_40",
         "dtStatusData&Sequence_40",
         "Details&Sequence_40",
-        "SheetsList&Sequence_40",
-        "strComponentName&Sequence_1",
-        "FormPath&Sequence_1"
+        "SheetsList&Sequence_40"
       ],
       "ArgumentsSectionElementsOrder": [
         "in_OrchestratorQueueName",
@@ -84,6 +82,55 @@
         "in_Vendors",
         "in_TransactionItem",
         "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/ProcessInvoice/ProcessInvoice_Scenario1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Email&Sequence_1",
+        "Config&Sequence_1",
+        "Vendors&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_VendorName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Mocks/Components/ProcessInvoice_mock.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Email&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_VendorName",
+        "in_Email",
+        "in_Vendors",
+        "in_TransactionItem",
+        "in_Config"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/InitAllSettings.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Dt_VendorData&Sequence_2",
+        "dt_SettingsAndConstants&Sequence_5",
+        "dt_Assets&Sequence_6",
+        "AssetValue&Sequence_11"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_ConfigFile",
+        "in_ConfigSheets",
+        "out_Config",
+        "in_VendorFile",
+        "out_Vendors"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
