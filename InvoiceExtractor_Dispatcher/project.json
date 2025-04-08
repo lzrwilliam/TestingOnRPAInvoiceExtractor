@@ -123,6 +123,41 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\FilterProcess\\FilterProcess_Scenario5.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "a3c3c635-44c0-4aac-bba5-515f4f751f1e",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\ExtratInvoiceDetails\\ExtractInvoiceDetails_Scenario1.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ac94e99c-0541-4bdf-8e0b-fe5d26089543",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\ExtratInvoiceDetails\\ExtractInvoiceDetails_Scenario2.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "85bb4fa8-4498-4105-a4b9-9be26a03df30",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\ExtratInvoiceDetails\\ExtractInvoiceDetails_Scenario3.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "6949f73c-9753-401d-841d-1f2ebe68bab5",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\ExtratInvoiceDetails\\ExtractInvoiceDetails_Scenario4.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "68018b02-678a-4105-bfd9-6d174a258c6f",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\Process\\Process_Scenario1.xaml"
       }
     ],
     "saveToCloud": false

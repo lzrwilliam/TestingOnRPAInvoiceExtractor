@@ -114,7 +114,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="FilterProcess" sap:VirtualizedContainerService.HintSize="1202,472" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="FilterProcess" sap:VirtualizedContainerService.HintSize="1682,946.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="scg:IEnumerable(x:String)" Name="InvoicesPath" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="InvoiceDetails" />
@@ -130,7 +130,10 @@
     <Flowchart.StartNode>
       <x:Reference>__ReferenceID14</x:Reference>
     </Flowchart.StartNode>
-    <FlowDecision x:Name="__ReferenceID13" Condition="[in_Email.Attachments.Count.Equals(1)]" DisplayName="Check NoAttachment" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+    <FlowDecision x:Name="__ReferenceID13" DisplayName="Check NoAttachment" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_1">
+      <FlowDecision.Condition>
+        <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
+      </FlowDecision.Condition>
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -141,7 +144,10 @@
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
       <FlowDecision.True>
-        <FlowDecision x:Name="__ReferenceID1" Condition="[in_Email.Attachments(0).Name.Contains(&quot;.pdf&quot;)]" DisplayName="Check Invoice Type" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+        <FlowDecision x:Name="__ReferenceID1" DisplayName="Check Invoice Type" sap:VirtualizedContainerService.HintSize="60,60" sap2010:WorkflowViewState.IdRef="FlowDecision_2">
+          <FlowDecision.Condition>
+            <Literal x:TypeArguments="x:Boolean" DisplayName="Literal" Value="True" />
+          </FlowDecision.Condition>
           <sap:WorkflowViewStateService.ViewState>
             <scg:Dictionary x:TypeArguments="x:String, x:Object">
               <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -160,7 +166,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">1100,835 1100,895</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <utam:MockActivity DisplayName="Mock Save Email Attachments" MockedActivityIdRef="SaveMailAttachments_1">
+              <utam:MockActivity DisplayName="Mock Save Email Attachments" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MockActivity_1" MockedActivityIdRef="SaveMailAttachments_1">
                 <utam:MockActivity.MockedActivity>
                   <ui:SaveMailAttachments ResourceAttachments="{x:Null}" Attachments="[InvoicesPath]" DisplayName="Save Email Attachments" ExcludeInlineAttachments="True" FolderPath="TempStorage" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="SaveMailAttachments_1" Message="[in_Email]" OverwriteExisting="True">
                     <sap:WorkflowViewStateService.ViewState>
@@ -170,7 +176,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:SaveMailAttachments>
                 </utam:MockActivity.MockedActivity>
-                <Sequence sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="">
+                <Sequence sap:VirtualizedContainerService.HintSize="468,165" sap2010:WorkflowViewState.IdRef="Sequence_1">
                   <sap:WorkflowViewStateService.ViewState>
                     <scg:Dictionary x:TypeArguments="x:String, x:Object">
                       <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -264,7 +270,7 @@
                               <av:PointCollection x:Key="ConnectorLocation">1240,1175 1240,1245</av:PointCollection>
                             </scg:Dictionary>
                           </sap:WorkflowViewStateService.ViewState>
-                          <utam:MockActivity DisplayName="Mock Log Message : Details Extracted" MockedActivityIdRef="LogMessage_1">
+                          <utam:MockActivity DisplayName="Mock Log Message : Details Extracted" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MockActivity_2" MockedActivityIdRef="LogMessage_1">
                             <utam:MockActivity.MockedActivity>
                               <ui:LogMessage DisplayName="Log Message : Details Extracted" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;All fields have been extracted as required !&quot;]">
                                 <sap:WorkflowViewStateService.ViewState>
@@ -274,7 +280,7 @@
                                 </sap:WorkflowViewStateService.ViewState>
                               </ui:LogMessage>
                             </utam:MockActivity.MockedActivity>
-                            <Sequence sap2010:WorkflowViewState.IdRef="" />
+                            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_2" />
                           </utam:MockActivity>
                           <FlowStep.Next>
                             <FlowStep x:Name="__ReferenceID8">
@@ -285,7 +291,7 @@
                                   <av:PointCollection x:Key="ConnectorLocation">1240,1315 1240,1395</av:PointCollection>
                                 </scg:Dictionary>
                               </sap:WorkflowViewStateService.ViewState>
-                              <utam:MockActivity DisplayName="Mock Add Queue Item" MockedActivityIdRef="AddQueueItem_1">
+                              <utam:MockActivity DisplayName="Mock Add Queue Item" sap2010:WorkflowViewState.IdRef="MockActivity_3" MockedActivityIdRef="AddQueueItem_1">
                                 <utam:MockActivity.MockedActivity>
                                   <ui:AddQueueItem ServiceBaseAddress="{x:Null}" TimeoutMS="{x:Null}" DisplayName="Add Queue Item" FolderPath="[in_Config(&quot;OrchestratorQueueFolder&quot;).ToString]" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="AddQueueItem_1" ItemInformationCollection="[InvoiceDetails]" Priority="Normal" QueueType="[in_Config(&quot;OrchestratorQueueName&quot;).ToString]" Reference="[in_Email.Attachments(0).Name+&quot;_&quot;+Now.ToString(&quot;yyyyMMddHHmmss&quot;)]">
                                     <ui:AddQueueItem.ItemInformation>
@@ -298,7 +304,7 @@
                                     </sap:WorkflowViewStateService.ViewState>
                                   </ui:AddQueueItem>
                                 </utam:MockActivity.MockedActivity>
-                                <Sequence sap2010:WorkflowViewState.IdRef="" />
+                                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_3" />
                               </utam:MockActivity>
                               <FlowStep.Next>
                                 <FlowStep x:Name="__ReferenceID12">
@@ -308,7 +314,7 @@
                                       <av:Size x:Key="ShapeSize">110,70</av:Size>
                                     </scg:Dictionary>
                                   </sap:WorkflowViewStateService.ViewState>
-                                  <utam:MockActivity DisplayName="Mock Mark Outlook Mail As Read/Unread" MockedActivityIdRef="MarkOutlookMailAsRead_1">
+                                  <utam:MockActivity DisplayName="Mock Mark Outlook Mail As Read/Unread" sap2010:WorkflowViewState.IdRef="MockActivity_4" MockedActivityIdRef="MarkOutlookMailAsRead_1">
                                     <utam:MockActivity.MockedActivity>
                                       <ui:MarkOutlookMailAsRead DisplayName="Mark Outlook Mail As Read/Unread" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MarkOutlookMailAsRead_1" MailMessage="[in_Email]" MarkAs="Read">
                                         <sap:WorkflowViewStateService.ViewState>
@@ -318,7 +324,7 @@
                                         </sap:WorkflowViewStateService.ViewState>
                                       </ui:MarkOutlookMailAsRead>
                                     </utam:MockActivity.MockedActivity>
-                                    <Sequence sap2010:WorkflowViewState.IdRef="" />
+                                    <Sequence sap2010:WorkflowViewState.IdRef="Sequence_4" />
                                   </utam:MockActivity>
                                 </FlowStep>
                               </FlowStep.Next>
@@ -341,7 +347,7 @@
                   <av:PointCollection x:Key="ConnectorLocation">830,805 830,885</av:PointCollection>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <utam:MockActivity DisplayName="Mock Reply back to Sender : Incorrect Type" MockedActivityIdRef="ReplyToOutlookMailMessage_2">
+              <utam:MockActivity DisplayName="Mock Reply back to Sender : Incorrect Type" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MockActivity_5" MockedActivityIdRef="ReplyToOutlookMailMessage_2">
                 <utam:MockActivity.MockedActivity>
                   <ui:ReplyToOutlookMailMessage AddBcc="{x:Null}" AddCc="{x:Null}" AddTo="{x:Null}" ReplyFrom="{x:Null}" TimeoutMS="{x:Null}" Body="[in_Config(&quot;Body_IncorrectInvoiceType&quot;).ToString]" DisplayName="Reply back to Sender : Incorrect Type" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReplyToOutlookMailMessage_2" Importance="Normal" MailMessage="[in_Email]" NewSubject="[&quot;RE : &quot; +in_Email.Subject]" ReplyAll="False">
                     <ui:ReplyToOutlookMailMessage.Files>
@@ -354,7 +360,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </ui:ReplyToOutlookMailMessage>
                 </utam:MockActivity.MockedActivity>
-                <Sequence sap2010:WorkflowViewState.IdRef="" />
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_5" />
               </utam:MockActivity>
               <FlowStep.Next>
                 <FlowStep x:Name="__ReferenceID10">
@@ -364,7 +370,7 @@
                       <av:Size x:Key="ShapeSize">110,70</av:Size>
                     </scg:Dictionary>
                   </sap:WorkflowViewStateService.ViewState>
-                  <utam:MockActivity DisplayName="Mock Throw BE2" MockedActivityIdRef="Throw_2">
+                  <utam:MockActivity DisplayName="Mock Throw BE2" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MockActivity_6" MockedActivityIdRef="Throw_2">
                     <utam:MockActivity.MockedActivity>
                       <Throw DisplayName="Throw BE2" Exception="[new BusinessRuleException(&quot;BE2:  Invalid Invoice Type&quot;)]" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Throw_2">
                         <sap:WorkflowViewStateService.ViewState>
@@ -374,7 +380,7 @@
                         </sap:WorkflowViewStateService.ViewState>
                       </Throw>
                     </utam:MockActivity.MockedActivity>
-                    <Sequence sap2010:WorkflowViewState.IdRef="" />
+                    <Sequence sap2010:WorkflowViewState.IdRef="Sequence_6" />
                   </utam:MockActivity>
                 </FlowStep>
               </FlowStep.Next>
@@ -391,7 +397,7 @@
               <av:PointCollection x:Key="ConnectorLocation">650,655 650,735</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <utam:MockActivity DisplayName="Mock Reply back to Sender : NotOnlyOneAttachment" MockedActivityIdRef="ReplyToOutlookMailMessage_1">
+          <utam:MockActivity DisplayName="Mock Reply back to Sender : NotOnlyOneAttachment" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MockActivity_7" MockedActivityIdRef="ReplyToOutlookMailMessage_1">
             <utam:MockActivity.MockedActivity>
               <ui:ReplyToOutlookMailMessage AddBcc="{x:Null}" AddCc="{x:Null}" AddTo="{x:Null}" ReplyFrom="{x:Null}" TimeoutMS="{x:Null}" Body="[in_Config(&quot;Body_ResendAttachment&quot;).ToString]" DisplayName="Reply back to Sender : NotOnlyOneAttachment" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="ReplyToOutlookMailMessage_1" Importance="Normal" MailMessage="[in_Email]" NewSubject="[&quot;RE : &quot; +in_Email.Subject]" ReplyAll="False">
                 <ui:ReplyToOutlookMailMessage.Files>
@@ -404,7 +410,7 @@
                 </sap:WorkflowViewStateService.ViewState>
               </ui:ReplyToOutlookMailMessage>
             </utam:MockActivity.MockedActivity>
-            <Sequence sap2010:WorkflowViewState.IdRef="" />
+            <Sequence sap2010:WorkflowViewState.IdRef="Sequence_7" />
           </utam:MockActivity>
           <FlowStep.Next>
             <FlowStep x:Name="__ReferenceID9">
@@ -414,7 +420,7 @@
                   <av:Size x:Key="ShapeSize">110,70</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <utam:MockActivity DisplayName="Mock Throw BE1" MockedActivityIdRef="Throw_1">
+              <utam:MockActivity DisplayName="Mock Throw BE1" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="MockActivity_8" MockedActivityIdRef="Throw_1">
                 <utam:MockActivity.MockedActivity>
                   <Throw DisplayName="Throw BE1" Exception="[new BusinessRuleException(&quot;BE1:  Invalid Number of Attachments &quot;)]" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Throw_1">
                     <sap:WorkflowViewStateService.ViewState>
@@ -424,7 +430,7 @@
                     </sap:WorkflowViewStateService.ViewState>
                   </Throw>
                 </utam:MockActivity.MockedActivity>
-                <Sequence sap2010:WorkflowViewState.IdRef="" />
+                <Sequence sap2010:WorkflowViewState.IdRef="Sequence_8" />
               </utam:MockActivity>
             </FlowStep>
           </FlowStep.Next>
