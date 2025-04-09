@@ -87,30 +87,24 @@
       "AddedNamespaces": null
     },
     {
-      "Path": "Tests/ProcessInvoice/ProcessInvoice_Scenario1.xaml",
+      "Path": "Framework/Process.xaml",
       "SortBy": 0,
-      "VariablesSectionElementsOrder": [
-        "Email&Sequence_1",
-        "Config&Sequence_1",
-        "Vendors&Sequence_1"
-      ],
+      "VariablesSectionElementsOrder": [],
       "ArgumentsSectionElementsOrder": [
-        "in_VendorName"
+        "in_TransactionItem",
+        "in_Config",
+        "in_Vendors"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
     },
     {
-      "Path": "Mocks/Components/ProcessInvoice_mock.xaml",
+      "Path": "Framework/InitAllApplications.xaml",
       "SortBy": 0,
       "VariablesSectionElementsOrder": [
-        "Email&Flowchart_1"
+        "FormPath&Sequence_9"
       ],
       "ArgumentsSectionElementsOrder": [
-        "in_VendorName",
-        "in_Email",
-        "in_Vendors",
-        "in_TransactionItem",
         "in_Config"
       ],
       "ConstantsSectionElementsOrder": [],
@@ -131,6 +125,112 @@
         "out_Config",
         "in_VendorFile",
         "out_Vendors"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/GetTransactionData.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionNumber",
+        "in_Config",
+        "out_TransactionItem",
+        "out_TransactionField1",
+        "out_TransactionField2",
+        "out_TransactionID",
+        "io_dt_TransactionData"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/KillAllProcesses.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/RetryCurrentTransaction.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "in_SystemException",
+        "in_QueueRetry"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/SetTransactionStatus.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "QueueRetry&Sequence_17",
+        "ScreenshotPath&Sequence_17"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_BusinessException",
+        "in_TransactionField1",
+        "in_TransactionField2",
+        "in_TransactionID",
+        "in_SystemException",
+        "in_Config",
+        "in_TransactionItem",
+        "io_RetryNumber",
+        "io_TransactionNumber",
+        "io_ConsecutiveSystemExceptions"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Framework/TakeScreenshot.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Screenshot&Sequence_1",
+        "ScreenshotFileInfo&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Folder",
+        "io_FilePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Mocks/Components/ProcessInvoice_mock.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Email&Flowchart_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Vendors",
+        "in_TransactionItem",
+        "in_Config",
+        "in_Email",
+        "in_VendorName"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/ProcessInvoice/ProcessInvoice_Scenario1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "EmailsList&Sequence_1",
+        "Emails&Sequence_1",
+        "Vendors&Sequence_1",
+        "Config&Sequence_1",
+        "Email&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_VendorName"
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null

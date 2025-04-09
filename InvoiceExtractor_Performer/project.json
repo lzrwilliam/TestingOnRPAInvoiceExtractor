@@ -6,6 +6,7 @@
   "dependencies": {
     "Adrosonic.OutlookFolders.Activities": "[1.0.2]",
     "UiPath.Excel.Activities": "[2.24.4]",
+    "UiPath.GSuite.Activities": "[3.0.10]",
     "UiPath.Mail.Activities": "[1.24.11]",
     "UiPath.MicrosoftOffice365.Activities": "[2.8.22]",
     "UiPath.System.Activities": "[24.10.7]",
@@ -90,11 +91,18 @@
         "fileName": "Tests\\WorkflowTestCaseTemplate.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "5ed44ffd-9b8f-4764-b249-ec34fd25e2a6",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\ProcessInvoice\\ProcessInvoice_Scenario1.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "ecf10b6f-c5e2-427b-ac2f-ca0b36eac8ae",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\ProcessInvoice\\ProcessInvoice_Scenario2.xaml"
       }
     ],
     "saveToCloud": false
