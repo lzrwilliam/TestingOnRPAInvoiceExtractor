@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="MoveCreateVendorSubfolder_Scenario1" this:MoveCreateVendorSubfolder_Scenario1.in_VendorName="AUTOTECH SUPPLIES" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="MoveCreateVendorSubfolder_Scenario1" this:MoveCreateVendorSubfolder_Scenario1.in_VendorName="AUTOTECH SUPPLIES" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="in_VendorName" Type="InArgument(x:String)" />
   </x:Members>
@@ -94,20 +94,20 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="MoveCreateVendorSubfolder_Scenario1" sap:VirtualizedContainerService.HintSize="1252,925.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="MoveCreateVendorSubfolder_Scenario1" sap:VirtualizedContainerService.HintSize="1276,911" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="450,121" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="468,121" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
     </Sequence>
-    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,251" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="468,260" sap2010:WorkflowViewState.IdRef="Sequence_3">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -121,6 +121,34 @@
           <InArgument x:TypeArguments="x:String" x:Key="in_ParentFolder">Invoices</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="468,507" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="SubfolderPath" />
+        <Variable x:TypeArguments="x:Boolean" Name="folderExists" />
+        <Variable x:TypeArguments="x:Int32" Name="folderCount" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="434,114" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[SubfolderPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">["Invoices\"+ in_VendorName]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim outlookApp As New Microsoft.Office.Interop.Outlook.Application&#xA;Dim outlookNs As Microsoft.Office.Interop.Outlook.NameSpace = outlookApp.GetNamespace(&quot;MAPI&quot;)&#xA;&#xA;folderCount = 0&#xA;folderExists = False&#xA;&#xA;Try&#xA;    Console.WriteLine(&quot;Checking folder path: &quot; &amp; folderToCheck)&#xA;&#xA;    Dim mainMailbox = outlookNs.Folders.Item(&quot;rpa-project@outlook.com&quot;)&#xA;    Dim pathParts = folderToCheck.Split({&quot;\&quot;}, StringSplitOptions.RemoveEmptyEntries)&#xA;    Dim currentFolder As Microsoft.Office.Interop.Outlook.MAPIFolder = mainMailbox&#xA;&#xA;    For i As Integer = 0 To pathParts.Length - 1&#xA;        Dim part As String = pathParts(i)&#xA;        Dim matchCount As Integer = 0&#xA;        Dim matchedFolder As Microsoft.Office.Interop.Outlook.MAPIFolder = Nothing&#xA;&#xA;        For Each subFolder As Microsoft.Office.Interop.Outlook.MAPIFolder In currentFolder.Folders&#xA;            If subFolder.Name.Equals(part, StringComparison.InvariantCultureIgnoreCase) Then&#xA;                matchCount += 1&#xA;                If matchedFolder Is Nothing Then&#xA;                    matchedFolder = subFolder&#xA;                End If&#xA;            End If&#xA;        Next&#xA;&#xA;        If i = pathParts.Length - 1 Then&#xA;            folderCount = matchCount&#xA;            If folderCount &gt; 0 Then&#xA;                folderExists = True&#xA;            End If&#xA;            Exit For&#xA;        End If&#xA;&#xA;        If matchedFolder IsNot Nothing Then&#xA;            currentFolder = matchedFolder&#xA;        Else&#xA;            folderCount = 0&#xA;            folderExists = False&#xA;            Exit For&#xA;        End If&#xA;    Next&#xA;&#xA;Catch ex As Exception&#xA;    Console.WriteLine(&quot; ❌ Exception: &quot; &amp; ex.Message)&#xA;    folderCount = 0&#xA;    folderExists = False&#xA;End Try&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+        <ui:InvokeCode.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="folderToCheck">[SubfolderPath]</InArgument>
+          <OutArgument x:TypeArguments="x:Boolean" x:Key="folderExists">[folderExists]</OutArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="folderCount">[folderCount]</OutArgument>
+        </ui:InvokeCode.Arguments>
+      </ui:InvokeCode>
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[folderCount.Equals(1)]" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
     </Sequence>
   </Sequence>
 </Activity>
