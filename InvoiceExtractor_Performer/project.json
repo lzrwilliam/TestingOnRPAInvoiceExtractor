@@ -103,6 +103,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\ProcessInvoice\\ProcessInvoice_Scenario2.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "65853ce7-6372-437c-aa7a-c7cdebe723e0",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\MoveCreateVendorSubfolder\\MoveCreateVendorSubfolder_Scenario1.xaml"
       }
     ],
     "saveToCloud": false

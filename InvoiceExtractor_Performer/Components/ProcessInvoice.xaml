@@ -122,7 +122,7 @@
       <AssemblyReference>UiPath.Platform</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Flowchart DisplayName="ProcessInvoice" sap:VirtualizedContainerService.HintSize="1511,538.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
+  <Flowchart DisplayName="ProcessInvoice" sap:VirtualizedContainerService.HintSize="1252,925.04" sap2010:WorkflowViewState.IdRef="Flowchart_1">
     <Flowchart.Variables>
       <Variable x:TypeArguments="umm:Office365Message" Name="Email" />
     </Flowchart.Variables>
@@ -201,7 +201,7 @@
               <av:PointCollection x:Key="ConnectorLocation">420,365 420,415</av:PointCollection>
             </scg:Dictionary>
           </sap:WorkflowViewStateService.ViewState>
-          <Sequence DisplayName="Move to other" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="Sequence_1">
+          <Sequence DisplayName="Move to other" sap:VirtualizedContainerService.HintSize="450,1045" sap2010:WorkflowViewState.IdRef="Sequence_1">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -216,7 +216,7 @@
                 </usau:BackupSlot>
               </umam:GetEmailByIdConnections.MailboxBackup>
             </umam:GetEmailByIdConnections>
-            <umam:ReplyToEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyAs="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hello!&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;You are not in the approved vendor list! Please contact us at our phone number for more details.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;/P&gt;&quot;)]" ConnectionId="f9a78ece-4558-4fc3-a091-0cce2e1ba603" DisplayName="Reply to Email" Email="[Email]" sap:VirtualizedContainerService.HintSize="416,483" sap2010:WorkflowViewState.IdRef="ReplyToEmailConnections_4" Importance="[UiPath.MicrosoftOffice365.Activities.Mail.Enums.Importance.Normal]" NewSubject="[&quot;RE: &quot; + Email.Subject]" ReplyToAll="False" SaveAsDraft="False" To="[{Email.SenderAddress.ToString()}]" UseConnectionService="True" UseSharedMailbox="False">
+            <umam:ReplyToEmailConnections ArgumentAttachmentPaths="{x:Null}" ArgumentAttachments="{x:Null}" AttachmentPaths="{x:Null}" Attachments="{x:Null}" Bcc="{x:Null}" Cc="{x:Null}" ConnectionAccountName="{x:Null}" ContinueOnError="{x:Null}" ReplyAs="{x:Null}" SingleAttachment="{x:Null}" AttachmentInputMode="Existing" AuthScopesInvalid="False" Body="[string.Format(&quot;&lt;P&gt;&lt;SPAN&gt;Hello!&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;SPAN&gt;You are not in the approved vendor list! Please contact us at our phone number for more details.&lt;/SPAN&gt;&lt;/P&gt;&lt;P&gt;&lt;/P&gt;&quot;)]" ConnectionId="310afcfe-1585-4e31-aaf9-c92efc34995f" DisplayName="Reply to Email" Email="[Email]" sap:VirtualizedContainerService.HintSize="416,483" sap2010:WorkflowViewState.IdRef="ReplyToEmailConnections_4" Importance="[UiPath.MicrosoftOffice365.Activities.Mail.Enums.Importance.Normal]" NewSubject="[&quot;RE: &quot; + Email.Subject]" ReplyToAll="False" SaveAsDraft="False" To="[{Email.SenderAddress.ToString()}]" UseConnectionService="True" UseSharedMailbox="False">
               <umam:ReplyToEmailConnections.AttachmentsBackup>
                 <usau:BackupSlot x:TypeArguments="umame:AttachmentInputMode" StoredValue="Existing">
                   <usau:BackupSlot.BackupValues>
@@ -271,7 +271,7 @@
                   <av:Size x:Key="ShapeSize">110,70</av:Size>
                 </scg:Dictionary>
               </sap:WorkflowViewStateService.ViewState>
-              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="334,141" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Moved to Other Folder&quot;]">
+              <ui:LogMessage DisplayName="Log Message" sap:VirtualizedContainerService.HintSize="110,70" sap2010:WorkflowViewState.IdRef="LogMessage_1" Level="Info" Message="[&quot;Moved to Other Folder&quot;]">
                 <sap:WorkflowViewStateService.ViewState>
                   <scg:Dictionary x:TypeArguments="x:String, x:Object">
                     <x:Boolean x:Key="IsExpanded">True</x:Boolean>
