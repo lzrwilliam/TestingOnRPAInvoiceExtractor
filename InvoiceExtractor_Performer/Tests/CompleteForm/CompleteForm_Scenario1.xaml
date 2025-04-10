@@ -1,4 +1,11 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CompleteForm_Scenario1" VisualBasic.Settings="{x:Null}" sap2010:WorkflowViewState.IdRef="CompleteForm_Scenario1_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CompleteForm_Scenario1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_VendorName" Type="InArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap2010:WorkflowViewState.IdRef>CompleteForm_Scenario1_1</sap2010:WorkflowViewState.IdRef>
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -109,31 +116,71 @@
       <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CompleteForm_Scenario1" sap:VirtualizedContainerService.HintSize="1252,925.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CompleteForm_Scenario1" sap:VirtualizedContainerService.HintSize="922.6666666666666,1114.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
-      <Variable x:TypeArguments="x:Boolean" Name="formLoaded">
-        <Variable.Default>
-          <Literal x:TypeArguments="x:Boolean" />
-        </Variable.Default>
-      </Variable>
+      <Variable x:TypeArguments="x:Boolean" Default="False" Name="formLoaded" />
     </Sequence.Variables>
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="450,251" sap2010:WorkflowViewState.IdRef="Sequence_3">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="468,260" sap2010:WorkflowViewState.IdRef="Sequence_7">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CompleteForm_mock - Invoke Workflow File (Mocks\Components\CompleteForm_mock.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Mocks\Components\CompleteForm_mock.xaml">
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="InitAllSettings - Invoke Workflow File (Framework\InitAllSettings.xaml)" sap:VirtualizedContainerService.HintSize="416,168" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_2" UnSafe="False" WorkflowFileName="Framework\InitAllSettings.xaml">
+        <ui:InvokeWorkflowFile.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="in_ConfigFile" />
+          <InArgument x:TypeArguments="s:String[]" x:Key="in_ConfigSheets" />
+          <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="out_Config">[Config]</OutArgument>
+          <InArgument x:TypeArguments="x:String" x:Key="in_VendorFile" />
+          <OutArgument x:TypeArguments="sd:DataTable" x:Key="out_Vendors" />
+        </ui:InvokeWorkflowFile.Arguments>
+      </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... When" sap:VirtualizedContainerService.HintSize="468,320" sap2010:WorkflowViewState.IdRef="Sequence_3">
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <ui:InvokeWorkflowFile ArgumentsVariable="{x:Null}" ContinueOnError="{x:Null}" DisplayName="CompleteForm_mock - Invoke Workflow File (Mocks\Components\CompleteForm_mock.xaml)" sap:VirtualizedContainerService.HintSize="416,228" sap2010:WorkflowViewState.IdRef="InvokeWorkflowFile_1" UnSafe="False" WorkflowFileName="Mocks\Components\CompleteForm_mock.xaml">
         <ui:InvokeWorkflowFile.Arguments>
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" x:Key="in_Config">[Config]</InArgument>
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
+    </Sequence>
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="468,512" sap2010:WorkflowViewState.IdRef="Sequence_4">
+      <Sequence.Variables>
+        <Variable x:TypeArguments="x:String" Name="SubfolderPath" />
+        <Variable x:TypeArguments="x:Boolean" Name="folderExists" />
+        <Variable x:TypeArguments="x:Int32" Name="folderCount" />
+      </Sequence.Variables>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+      <Assign sap:VirtualizedContainerService.HintSize="434,117.33333333333333" sap2010:WorkflowViewState.IdRef="Assign_1">
+        <Assign.To>
+          <OutArgument x:TypeArguments="x:String">[SubfolderPath]</OutArgument>
+        </Assign.To>
+        <Assign.Value>
+          <InArgument x:TypeArguments="x:String">["Invoices\"+ in_VendorName]</InArgument>
+        </Assign.Value>
+      </Assign>
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim outlookApp As New Microsoft.Office.Interop.Outlook.Application&#xA;Dim outlookNs As Microsoft.Office.Interop.Outlook.NameSpace = outlookApp.GetNamespace(&quot;MAPI&quot;)&#xA;&#xA;folderCount = 0&#xA;folderExists = False&#xA;&#xA;Try&#xA;    Console.WriteLine(&quot;Checking folder path: &quot; &amp; folderToCheck)&#xA;&#xA;    Dim mainMailbox = outlookNs.Folders.Item(&quot;rpa-project@outlook.com&quot;)&#xA;    Dim pathParts = folderToCheck.Split({&quot;\&quot;}, StringSplitOptions.RemoveEmptyEntries)&#xA;    Dim currentFolder As Microsoft.Office.Interop.Outlook.MAPIFolder = mainMailbox&#xA;&#xA;    For i As Integer = 0 To pathParts.Length - 1&#xA;        Dim part As String = pathParts(i)&#xA;        Dim matchCount As Integer = 0&#xA;        Dim matchedFolder As Microsoft.Office.Interop.Outlook.MAPIFolder = Nothing&#xA;&#xA;        For Each subFolder As Microsoft.Office.Interop.Outlook.MAPIFolder In currentFolder.Folders&#xA;            If subFolder.Name.Equals(part, StringComparison.InvariantCultureIgnoreCase) Then&#xA;                matchCount += 1&#xA;                If matchedFolder Is Nothing Then&#xA;                    matchedFolder = subFolder&#xA;                End If&#xA;            End If&#xA;        Next&#xA;&#xA;        If i = pathParts.Length - 1 Then&#xA;            folderCount = matchCount&#xA;            If folderCount &gt; 0 Then&#xA;                folderExists = True&#xA;            End If&#xA;            Exit For&#xA;        End If&#xA;&#xA;        If matchedFolder IsNot Nothing Then&#xA;            currentFolder = matchedFolder&#xA;        Else&#xA;            folderCount = 0&#xA;            folderExists = False&#xA;            Exit For&#xA;        End If&#xA;    Next&#xA;&#xA;Catch ex As Exception&#xA;    Console.WriteLine(&quot; ❌ Exception: &quot; &amp; ex.Message)&#xA;    folderCount = 0&#xA;    folderExists = False&#xA;End Try&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,197.33333333333334" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+        <ui:InvokeCode.Arguments>
+          <InArgument x:TypeArguments="x:String" x:Key="folderToCheck">[SubfolderPath]</InArgument>
+          <OutArgument x:TypeArguments="x:Boolean" x:Key="folderExists">[folderExists]</OutArgument>
+          <OutArgument x:TypeArguments="x:Int32" x:Key="folderCount">[folderCount]</OutArgument>
+        </ui:InvokeCode.Arguments>
+      </ui:InvokeCode>
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[folderCount.Equals(1)]" sap:VirtualizedContainerService.HintSize="434,114.66666666666667" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
     </Sequence>
   </Sequence>
 </Activity>
