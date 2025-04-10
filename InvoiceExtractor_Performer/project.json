@@ -103,6 +103,13 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\ProcessInvoice\\ProcessInvoice_Scenario2.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "c12705e2-0d70-4909-9fcb-dded56845259",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CompleteForm\\CompleteForm_Scenario1.xaml"
       }
     ],
     "saveToCloud": false

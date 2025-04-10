@@ -1,0 +1,13 @@
+﻿{
+  "Name": "Invoice DetailsAll fiel…",
+  "Type": "Element",
+  "Id": "TJpjMCeKi06KbHT_r_QNVQ",
+  "Reference": "5VsBlbiBdkqguEHwIfsIUg/TJpjMCeKi06KbHT_r_QNVQ",
+  "ParentRef": "5VsBlbiBdkqguEHwIfsIUg/WGJwdaslikOnkFG8AXKnXw",
+  "Created": "2025-04-10T21:02:40.4667408Z",
+  "Updated": "2025-04-10T21:02:40.4667408Z",
+  "CreatedBy": [
+    "UiPath.UIAutomationCore, Version=24.12.1.0, Culture=neutral, PublicKeyToken=null",
+    "UiPath.Platform, Version=24.12.3.0, Culture=neutral, PublicKeyToken=null"
+  ]
+}

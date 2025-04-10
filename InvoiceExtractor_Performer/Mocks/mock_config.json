@@ -11,6 +11,10 @@
     {
       "mockFilePath": "Mocks\\Components\\MoveCreateVendorSubfolder_mock.xaml",
       "sourceWorkflowPath": "Components\\MoveCreateVendorSubfolder.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Components\\CompleteForm_mock.xaml",
+      "sourceWorkflowPath": "Components\\CompleteForm.xaml"
     }
   ]
 }

@@ -7,5 +7,8 @@
   },
   "Mocks\\Components\\MoveCreateVendorSubfolder_mock.xaml": {
     "sourceWorkflowHash": "47b4b8803c061f956bd022331ffbff96eaf605cb8fcd28f00fdacbac85760338"
+  },
+  "Mocks\\Components\\CompleteForm_mock.xaml": {
+    "sourceWorkflowHash": "d7eee2240c61fab006aba4eedb9363d936b327048664d9166298f68afa78e783"
   }
 }
