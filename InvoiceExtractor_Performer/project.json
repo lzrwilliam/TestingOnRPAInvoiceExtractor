@@ -110,6 +110,20 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\CompleteForm\\CompleteForm_Scenario1.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "04fa4ba2-4418-40ac-be19-304ae3f0f10d",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Framework\\GenerateReport_Scenario1.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "0b00ef4b-8df3-4fd6-8141-a462a1a4a31c",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\GenerateReport\\GenerateReport_Scenario1.xaml"
       }
     ],
     "saveToCloud": false
