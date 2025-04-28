@@ -265,6 +265,83 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/ExtratInvoiceDetails/ExtractInvoiceDetails_Scenario1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "exceptionObject&Sequence_1",
+        "InvoiceDetails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_InvoicePath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/ExtratInvoiceDetails/ExtractInvoiceDetails_Scenario2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "IsPDF&Sequence_1",
+        "exceptionObject&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PdfPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/ExtratInvoiceDetails/ExtractInvoiceDetails_Scenario3.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "exceptionObject&Sequence_1",
+        "NoPages&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PdfPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/ExtratInvoiceDetails/ExtractInvoiceDetails_Scenario4.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "InvoiceDetails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_PdfPath"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/Process/Process_Scenario1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "LastEmail&Sequence_1",
+        "exceptionObject&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Mocks/Framework/Process_mock.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "emails&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "out_LastEmail"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }

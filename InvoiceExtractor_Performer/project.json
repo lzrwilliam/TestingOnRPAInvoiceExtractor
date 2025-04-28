@@ -124,6 +124,12 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\GenerateReport\\GenerateReport_Scenario1.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "b04dd595-a81c-440c-bf06-2c980fc572b1",
+        "testCaseType": "TestCase",
+        "fileName": "Tests\\MoveCreateVendorSubfolder\\MoveCreateVendorSubfolder_Scenario1.xaml"
       }
     ],
     "saveToCloud": false

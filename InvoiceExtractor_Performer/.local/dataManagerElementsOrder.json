@@ -337,6 +337,28 @@
       "ArgumentsSectionElementsOrder": [],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Mocks/Framework/Process_mock.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "SheetName&Sequence_3",
+        "dtReportRow&Sequence_3",
+        "TransactionReference&Sequence_3",
+        "StartedProcess&Sequence_3",
+        "Status&Sequence_3",
+        "dtStatusData&Sequence_3",
+        "Details&Sequence_3",
+        "SheetsList&Sequence_3",
+        "TransactionItem&Sequence_3"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_TransactionItem",
+        "in_Config",
+        "in_Vendors"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
