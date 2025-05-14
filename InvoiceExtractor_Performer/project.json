@@ -124,6 +124,14 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\GenerateReport\\GenerateReport_Scenario1.xaml"
+      },
+      {
+        "editingStatus": "InProgress",
+        "testCaseId": "98c99ea3-3fe8-4cd1-9a73-780aa96a29e8",
+        "dataVariationFilePath": ".variations\\facturi_test_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CompleteForm\\CompleteForm_Scenario2_AI.xaml"
       }
     ],
     "saveToCloud": false

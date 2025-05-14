@@ -13,5 +13,11 @@
   },
   "Mocks\\Framework\\Process_mock.xaml": {
     "sourceWorkflowHash": "97272ccaafaaf1cd336fcc53c444d49a3460b6096c4cefef286bf26eb61c8383"
+  },
+  "Mocks\\Components\\CompleteForm_mock_1.xaml": {
+    "sourceWorkflowHash": "d7eee2240c61fab006aba4eedb9363d936b327048664d9166298f68afa78e783"
+  },
+  "Mocks\\Components\\CompleteForm_mock_2.xaml": {
+    "sourceWorkflowHash": "d7eee2240c61fab006aba4eedb9363d936b327048664d9166298f68afa78e783"
   }
 }

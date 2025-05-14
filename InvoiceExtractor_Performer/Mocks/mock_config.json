@@ -19,6 +19,14 @@
     {
       "mockFilePath": "Mocks\\Framework\\Process_mock.xaml",
       "sourceWorkflowPath": "Framework\\Process.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Components\\CompleteForm_mock_1.xaml",
+      "sourceWorkflowPath": "Components\\CompleteForm.xaml"
+    },
+    {
+      "mockFilePath": "Mocks\\Components\\CompleteForm_mock_2.xaml",
+      "sourceWorkflowPath": "Components\\CompleteForm.xaml"
     }
   ]
 }
