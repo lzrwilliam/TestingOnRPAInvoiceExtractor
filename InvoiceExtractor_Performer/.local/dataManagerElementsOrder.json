@@ -268,6 +268,87 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Mocks/Components/CompleteForm_mock_1.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strComponentName&Sequence_1",
+        "FormPath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_TransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Test.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Email&Sequence_1",
+        "Res&Sequence_1",
+        "email&Sequence_1",
+        "testRes&Sequence_1",
+        "oFolders&Sequence_1",
+        "ceva&Sequence_1",
+        "Config&Sequence_1",
+        "Vendors&Sequence_1",
+        "FormPath&Sequence_1",
+        "TransactionItems&Sequence_1",
+        "SheetName&Sequence_4",
+        "dtReportRow&Sequence_4",
+        "TransactionReference&Sequence_4",
+        "StartedProcess&Sequence_4",
+        "Status&Sequence_4",
+        "TransactionItem_Reference_ToString&Sequence_4",
+        "TransactionItem_StartTransactionTime_ToString&Sequence_4",
+        "TransactionItem_Status_ToString&Sequence_4",
+        "dtStatusData&Sequence_4",
+        "Details&Sequence_4",
+        "SheetsList&Sequence_4"
+      ],
+      "ArgumentsSectionElementsOrder": [],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Mocks/Components/CompleteForm_mock_2.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "strComponentName&Sequence_1",
+        "FormPath&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "in_Config",
+        "in_TransactionItem"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/CompleteForm/CompleteForm_Scenario2_AI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "Config&Sequence_1",
+        "TransactionItem&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "VAT",
+        "Vendor_Addres",
+        "Vendor_Name",
+        "Invoice_Number",
+        "Invoice_Date",
+        "Due_Date",
+        "Vendor_Address",
+        "Billing_Address",
+        "Shipping_Address",
+        "Ordered_Items",
+        "Total_Amount"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
