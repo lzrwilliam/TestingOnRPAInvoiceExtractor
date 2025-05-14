@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="CompleteForm_Scenario2_AI" this:CompleteForm_Scenario2_AI.Vendor_Name="EcoSupplies Ltd." this:CompleteForm_Scenario2_AI.Invoice_Number="INV-28343" this:CompleteForm_Scenario2_AI.Invoice_Date="08/08/2025" this:CompleteForm_Scenario2_AI.Due_Date="08/08/2025" this:CompleteForm_Scenario2_AI.Vendor_Address="78 Industrial Rd, Dayton, OH" this:CompleteForm_Scenario2_AI.Billing_Address="1500 River Rd, Sacramento, CA" this:CompleteForm_Scenario2_AI.Shipping_Address="88 Hilltop Rd, Madison, WI" this:CompleteForm_Scenario2_AI.Ordered_Items="Paper A4 x10, Pens x50, Stapler x2" this:CompleteForm_Scenario2_AI.Total_Amount="4734.88" this:CompleteForm_Scenario2_AI.Vendor_Addres="123 Tech Street, Cluj-Napoca" this:CompleteForm_Scenario2_AI.VAT="19" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="CompleteForm_Scenario2_AI" this:CompleteForm_Scenario2_AI.Vendor_Addres="123 Tech Street, Cluj-Napoca" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:s="clr-namespace:System;assembly=System.Private.CoreLib" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:sd="clr-namespace:System.Data;assembly=System.Data.Common" xmlns:this="clr-namespace:" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uta="clr-namespace:UiPath.Testing.Activities;assembly=UiPath.Testing.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <x:Members>
     <x:Property Name="Vendor_Name" Type="InArgument(x:String)" />
     <x:Property Name="Invoice_Number" Type="InArgument(x:String)" />
@@ -9,8 +9,8 @@
     <x:Property Name="Shipping_Address" Type="InArgument(x:String)" />
     <x:Property Name="Ordered_Items" Type="InArgument(x:String)" />
     <x:Property Name="Total_Amount" Type="InArgument(x:String)" />
-    <x:Property Name="Vendor_Addres" Type="InArgument(x:String)" />
     <x:Property Name="VAT" Type="InArgument(x:String)" />
+    <x:Property Name="Vendor_Addres" Type="InArgument(x:String)" />
   </x:Members>
   <VisualBasic.Settings>
     <x:Null />
@@ -103,7 +103,7 @@
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CompleteForm_Scenario2_AI" sap:VirtualizedContainerService.HintSize="940,858" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CompleteForm_Scenario2_AI" sap:VirtualizedContainerService.HintSize="1054,925.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:QueueItem" Default="[New QueueItem]" Name="TransactionItem" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />
@@ -113,13 +113,13 @@
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="468,378" sap2010:WorkflowViewState.IdRef="Sequence_2">
+    <Sequence DisplayName="... Given" sap:VirtualizedContainerService.HintSize="468,375" sap2010:WorkflowViewState.IdRef="Sequence_2">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <Assign sap:VirtualizedContainerService.HintSize="434,118" sap2010:WorkflowViewState.IdRef="Assign_1">
+      <Assign sap:VirtualizedContainerService.HintSize="434,115" sap2010:WorkflowViewState.IdRef="Assign_1">
         <Assign.To>
           <OutArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)">[TransactionItem.SpecificContent]</OutArgument>
         </Assign.To>
@@ -127,13 +127,13 @@
           <InArgument x:TypeArguments="scg:Dictionary(x:String, x:Object)" xml:space="preserve">[New Dictionary(Of String, Object) From {
     {"Vendor Name", Vendor_Name},
     {"Invoice Number", Invoice_Number},
-    {"Invoice Date",Invoice_Date },
-    {"Due Date", Due_Date},
-    {"Vendor Adress", Vendor_Address},
+{"Invoice Date", DateTime.Parse(Invoice_Date.ToString()).ToString("dd/MM/yyyy")},
+    {"Due Date", DateTime.Parse(Due_Date.ToString()).ToString("dd/MM/yyyy")},
+    {"Vendor Adress", Vendor_Addres},
     {"Shipping Address", Shipping_Address},
     {"Billing Address", Billing_Address},
     {"Total Amount", Total_Amount},
-    {"VAT", "20"},
+    {"VAT", VAT},
     {"OrderedItems", Ordered_Items}
 }]</InArgument>
         </Assign.Value>
@@ -161,13 +161,13 @@
         </ui:InvokeWorkflowFile.Arguments>
       </ui:InvokeWorkflowFile>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="468,197.33333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="468,196" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <sap:WorkflowViewStateService.ViewState>
         <scg:Dictionary x:TypeArguments="x:String, x:Object">
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
-      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="True" sap:VirtualizedContainerService.HintSize="416,114.66666666666667" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="True" sap:VirtualizedContainerService.HintSize="416,113" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
     </Sequence>
   </Sequence>
 </Activity>

@@ -1,4 +1,4 @@
-﻿{
+{
   "name": "InvoiceExctractor_Performer",
   "projectId": "a901d03e-2825-43d3-8e6c-bf27405cafc3",
   "description": "InvoiceExctractor_Performer",
@@ -126,9 +126,9 @@
         "fileName": "Tests\\GenerateReport\\GenerateReport_Scenario1.xaml"
       },
       {
-        "editingStatus": "InProgress",
+        "editingStatus": "Publishable",
         "testCaseId": "98c99ea3-3fe8-4cd1-9a73-780aa96a29e8",
-        "dataVariationFilePath": ".variations\\facturi_test_Sheet1.json",
+        "dataVariationFilePath": ".variations\\facturi_test (2)_Sheet1.json",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\CompleteForm\\CompleteForm_Scenario2_AI.xaml"

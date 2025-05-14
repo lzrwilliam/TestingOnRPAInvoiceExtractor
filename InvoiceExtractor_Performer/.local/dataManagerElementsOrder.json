@@ -369,6 +369,29 @@
       ],
       "ConstantsSectionElementsOrder": [],
       "AddedNamespaces": null
+    },
+    {
+      "Path": "Tests/CompleteForm/CompleteForm_Scenario2_AI.xaml",
+      "SortBy": 0,
+      "VariablesSectionElementsOrder": [
+        "TransactionItem&Sequence_1",
+        "Config&Sequence_1"
+      ],
+      "ArgumentsSectionElementsOrder": [
+        "Vendor_Name",
+        "Invoice_Number",
+        "Invoice_Date",
+        "Due_Date",
+        "Vendor_Address",
+        "Billing_Address",
+        "Shipping_Address",
+        "Ordered_Items",
+        "Total_Amount",
+        "Vendor_Addres",
+        "VAT"
+      ],
+      "ConstantsSectionElementsOrder": [],
+      "AddedNamespaces": null
     }
   ]
 }
