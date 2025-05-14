@@ -1,4 +1,4 @@
-{
+﻿{
   "name": "InvoiceExctractor_Performer",
   "projectId": "a901d03e-2825-43d3-8e6c-bf27405cafc3",
   "description": "InvoiceExctractor_Performer",
@@ -119,17 +119,19 @@
         "fileName": "Framework\\GenerateReport_Scenario1.xaml"
       },
       {
-        "editingStatus": "Publishable",
+        "editingStatus": "InProgress",
         "testCaseId": "0b00ef4b-8df3-4fd6-8141-a462a1a4a31c",
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\GenerateReport\\GenerateReport_Scenario1.xaml"
       },
       {
-        "editingStatus": "Publishable",
-        "testCaseId": "b04dd595-a81c-440c-bf06-2c980fc572b1",
+        "editingStatus": "InProgress",
+        "testCaseId": "98c99ea3-3fe8-4cd1-9a73-780aa96a29e8",
+        "dataVariationFilePath": ".variations\\facturi_test_Sheet1.json",
         "testCaseType": "TestCase",
-        "fileName": "Tests\\MoveCreateVendorSubfolder\\MoveCreateVendorSubfolder_Scenario1.xaml"
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\CompleteForm\\CompleteForm_Scenario2_AI.xaml"
       }
     ],
     "saveToCloud": false
