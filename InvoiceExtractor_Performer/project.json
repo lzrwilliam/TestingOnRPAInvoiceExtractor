@@ -132,6 +132,14 @@
         "testCaseType": "TestCase",
         "executionTemplateInvokeIsolated": false,
         "fileName": "Tests\\CompleteForm\\CompleteForm_Scenario2_AI.xaml"
+      },
+      {
+        "editingStatus": "Publishable",
+        "testCaseId": "90196cb7-916a-40e8-9897-3abc582dec32",
+        "dataVariationFilePath": ".variations\\TestData_MessageIDFormat_Sheet1.json",
+        "testCaseType": "TestCase",
+        "executionTemplateInvokeIsolated": false,
+        "fileName": "Tests\\MoveCreateVendorSubfolder\\MoveCreateVendorSubfolder_Scenario1_AI.xaml"
       }
     ],
     "saveToCloud": false

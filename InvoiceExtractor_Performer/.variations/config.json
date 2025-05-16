@@ -3,6 +3,10 @@
     {
       "filePath": ".variations\\facturi_test (2)_Sheet1.json",
       "dataVariationType": "File"
+    },
+    {
+      "filePath": ".variations\\TestData_MessageIDFormat_Sheet1.json",
+      "dataVariationType": "File"
     }
   ]
 }
