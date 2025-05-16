@@ -102,7 +102,7 @@
       <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="MoveCreateVendorSubfolder_Scenario1_Mutant" sap:VirtualizedContainerService.HintSize="806.8000000000001,1389.6" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="MoveCreateVendorSubfolder_Scenario1_Mutant" sap:VirtualizedContainerService.HintSize="806.8000000000001,1478.4" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="x:Boolean" Name="passed" />
     </Sequence.Variables>
@@ -183,7 +183,7 @@
         </TryCatch.Finally>
       </TryCatch>
     </Sequence>
-    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="502.4,506.4" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <Sequence DisplayName="... Then" sap:VirtualizedContainerService.HintSize="502.4,595.2" sap2010:WorkflowViewState.IdRef="Sequence_4">
       <Sequence.Variables>
         <Variable x:TypeArguments="x:String" Name="SubfolderPath" />
         <Variable x:TypeArguments="x:Boolean" Name="folderExists" />
@@ -194,6 +194,7 @@
           <x:Boolean x:Key="IsExpanded">True</x:Boolean>
         </scg:Dictionary>
       </sap:WorkflowViewStateService.ViewState>
+      <ui:Comment sap:VirtualizedContainerService.HintSize="433.6,88" sap2010:WorkflowViewState.IdRef="Comment_1" Text="// Write your comments in the Text property" />
       <Assign sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="Assign_2">
         <Assign.To>
           <OutArgument x:TypeArguments="x:String">[SubfolderPath]</OutArgument>
@@ -202,14 +203,14 @@
           <InArgument x:TypeArguments="x:String">["Invoices\"+ VendorName]</InArgument>
         </Assign.Value>
       </Assign>
-      <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim outlookApp As New Microsoft.Office.Interop.Outlook.Application&#xA;Dim outlookNs As Microsoft.Office.Interop.Outlook.NameSpace = outlookApp.GetNamespace(&quot;MAPI&quot;)&#xA;&#xA;folderCount = 0&#xA;folderExists = False&#xA;&#xA;Try&#xA;    Console.WriteLine(&quot;Checking folder path: &quot; &amp; folderToCheck)&#xA;&#xA;    Dim mainMailbox = outlookNs.Folders.Item(&quot;rpa-project@outlook.com&quot;)&#xA;    Dim pathParts = folderToCheck.Split({&quot;\&quot;}, StringSplitOptions.RemoveEmptyEntries)&#xA;    Dim currentFolder As Microsoft.Office.Interop.Outlook.MAPIFolder = mainMailbox&#xA;&#xA;    For i As Integer = 0 To pathParts.Length - 1&#xA;        Dim part As String = pathParts(i)&#xA;        Dim matchCount As Integer = 0&#xA;        Dim matchedFolder As Microsoft.Office.Interop.Outlook.MAPIFolder = Nothing&#xA;&#xA;        For Each subFolder As Microsoft.Office.Interop.Outlook.MAPIFolder In currentFolder.Folders&#xA;            If subFolder.Name.Equals(part, StringComparison.InvariantCultureIgnoreCase) Then&#xA;                matchCount += 1&#xA;                If matchedFolder Is Nothing Then&#xA;                    matchedFolder = subFolder&#xA;                End If&#xA;            End If&#xA;        Next&#xA;&#xA;        If i = pathParts.Length - 1 Then&#xA;            folderCount = matchCount&#xA;            If folderCount &gt; 0 Then&#xA;                folderExists = True&#xA;            End If&#xA;            Exit For&#xA;        End If&#xA;&#xA;        If matchedFolder IsNot Nothing Then&#xA;            currentFolder = matchedFolder&#xA;        Else&#xA;            folderCount = 0&#xA;            folderExists = False&#xA;            Exit For&#xA;        End If&#xA;    Next&#xA;&#xA;Catch ex As Exception&#xA;    Console.WriteLine(&quot; ❌ Exception: &quot; &amp; ex.Message)&#xA;    folderCount = 0&#xA;    folderExists = False&#xA;End Try&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="434,197" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
+      <ui:InvokeCode ContinueOnError="{x:Null}" Code="Dim outlookApp As New Microsoft.Office.Interop.Outlook.Application&#xA;Dim outlookNs As Microsoft.Office.Interop.Outlook.NameSpace = outlookApp.GetNamespace(&quot;MAPI&quot;)&#xA;&#xA;folderCount = 0&#xA;folderExists = False&#xA;&#xA;Try&#xA;    Console.WriteLine(&quot;Checking folder path: &quot; &amp; folderToCheck)&#xA;&#xA;    Dim mainMailbox = outlookNs.Folders.Item(&quot;rpa-project@outlook.com&quot;)&#xA;    Dim pathParts = folderToCheck.Split({&quot;\&quot;}, StringSplitOptions.RemoveEmptyEntries)&#xA;    Dim currentFolder As Microsoft.Office.Interop.Outlook.MAPIFolder = mainMailbox&#xA;&#xA;    For i As Integer = 0 To pathParts.Length - 1&#xA;        Dim part As String = pathParts(i)&#xA;        Dim matchCount As Integer = 0&#xA;        Dim matchedFolder As Microsoft.Office.Interop.Outlook.MAPIFolder = Nothing&#xA;&#xA;        For Each subFolder As Microsoft.Office.Interop.Outlook.MAPIFolder In currentFolder.Folders&#xA;            If subFolder.Name.Equals(part, StringComparison.InvariantCultureIgnoreCase) Then&#xA;                matchCount += 1&#xA;                If matchedFolder Is Nothing Then&#xA;                    matchedFolder = subFolder&#xA;                End If&#xA;            End If&#xA;        Next&#xA;&#xA;        If i = pathParts.Length - 1 Then&#xA;            folderCount = matchCount&#xA;            If folderCount &gt; 0 Then&#xA;                folderExists = True&#xA;            End If&#xA;            Exit For&#xA;        End If&#xA;&#xA;        If matchedFolder IsNot Nothing Then&#xA;            currentFolder = matchedFolder&#xA;        Else&#xA;            folderCount = 0&#xA;            folderExists = False&#xA;            Exit For&#xA;        End If&#xA;    Next&#xA;&#xA;Catch ex As Exception&#xA;    Console.WriteLine(&quot; ❌ Exception: &quot; &amp; ex.Message)&#xA;    folderCount = 0&#xA;    folderExists = False&#xA;End Try&#xA;" DisplayName="Invoke Code" sap:VirtualizedContainerService.HintSize="433.6,196.8" sap2010:WorkflowViewState.IdRef="InvokeCode_1">
         <ui:InvokeCode.Arguments>
           <InArgument x:TypeArguments="x:String" x:Key="folderToCheck">[SubfolderPath]</InArgument>
           <OutArgument x:TypeArguments="x:Boolean" x:Key="folderExists">[folderExists]</OutArgument>
           <OutArgument x:TypeArguments="x:Int32" x:Key="folderCount">[folderCount]</OutArgument>
         </ui:InvokeCode.Arguments>
       </ui:InvokeCode>
-      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[folderCount.Equals(1) AND passed]" sap:VirtualizedContainerService.HintSize="434,113" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
+      <uta:VerifyExpression AlternativeVerificationTitle="{x:Null}" KeepScreenshots="{x:Null}" OutputMessageFormat="{x:Null}" Result="{x:Null}" ScreenshotsPath="{x:Null}" ContinueOnFailure="True" DisplayName="Verify Expression" Expression="[folderCount.Equals(1) AND passed]" sap:VirtualizedContainerService.HintSize="433.6,113.6" sap2010:WorkflowViewState.IdRef="VerifyExpression_1" TakeScreenshotInCaseOfFailingAssertion="False" TakeScreenshotInCaseOfSucceedingAssertion="False" />
     </Sequence>
   </Sequence>
 </Activity>
