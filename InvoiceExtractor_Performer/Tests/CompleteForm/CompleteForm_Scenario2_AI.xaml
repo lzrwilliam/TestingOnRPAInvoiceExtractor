@@ -101,9 +101,10 @@
       <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
       <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
       <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>InvoiceExctractor_Performer.Core</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence DisplayName="CompleteForm_Scenario2_AI" sap:VirtualizedContainerService.HintSize="1054,925.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
+  <Sequence DisplayName="CompleteForm_Scenario2_AI" sap:VirtualizedContainerService.HintSize="1262,1174.04" sap2010:WorkflowViewState.IdRef="Sequence_1">
     <Sequence.Variables>
       <Variable x:TypeArguments="ui:QueueItem" Default="[New QueueItem]" Name="TransactionItem" />
       <Variable x:TypeArguments="scg:Dictionary(x:String, x:Object)" Name="Config" />

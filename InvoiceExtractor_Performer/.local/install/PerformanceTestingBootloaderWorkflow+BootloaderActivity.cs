@@ -11,9 +11,7 @@ namespace InvoiceExctractor_Performer_Tests
     public class BootloaderActivity : System.Activities.Activity
     {
         public InArgument<System.String> pipeName { get; set; }
-
         public InArgument<System.String> workflowPath { get; set; }
-
         public InArgument<System.Collections.Generic.Dictionary<System.String, System.Object>> wfArgs { get; set; }
 
         public BootloaderActivity()
@@ -21,7 +19,11 @@ namespace InvoiceExctractor_Performer_Tests
             this.Implementation = () =>
             {
                 return new BootloaderActivityChild()
-                {pipeName = (this.pipeName == null ? (InArgument<System.String>)Argument.CreateReference((Argument)new InArgument<System.String>(), "pipeName") : (InArgument<System.String>)Argument.CreateReference((Argument)this.pipeName, "pipeName")), workflowPath = (this.workflowPath == null ? (InArgument<System.String>)Argument.CreateReference((Argument)new InArgument<System.String>(), "workflowPath") : (InArgument<System.String>)Argument.CreateReference((Argument)this.workflowPath, "workflowPath")), wfArgs = (this.wfArgs == null ? (InArgument<System.Collections.Generic.Dictionary<System.String, System.Object>>)Argument.CreateReference((Argument)new InArgument<System.Collections.Generic.Dictionary<System.String, System.Object>>(), "wfArgs") : (InArgument<System.Collections.Generic.Dictionary<System.String, System.Object>>)Argument.CreateReference((Argument)this.wfArgs, "wfArgs")), };
+                {
+                    pipeName = (this.pipeName == null ? (InArgument<System.String>)Argument.CreateReference((Argument)new InArgument<System.String>(), "pipeName") : (InArgument<System.String>)Argument.CreateReference((Argument)this.pipeName, "pipeName")),
+                    workflowPath = (this.workflowPath == null ? (InArgument<System.String>)Argument.CreateReference((Argument)new InArgument<System.String>(), "workflowPath") : (InArgument<System.String>)Argument.CreateReference((Argument)this.workflowPath, "workflowPath")),
+                    wfArgs = (this.wfArgs == null ? (InArgument<System.Collections.Generic.Dictionary<System.String, System.Object>>)Argument.CreateReference((Argument)new InArgument<System.Collections.Generic.Dictionary<System.String, System.Object>>(), "wfArgs") : (InArgument<System.Collections.Generic.Dictionary<System.String, System.Object>>)Argument.CreateReference((Argument)this.wfArgs, "wfArgs")),
+                };
             };
         }
     }
@@ -30,11 +32,8 @@ namespace InvoiceExctractor_Performer_Tests
     internal class BootloaderActivityChild : UiPath.CodedWorkflows.AsyncTaskCodedWorkflowActivity
     {
         public InArgument<System.String> pipeName { get; set; }
-
         public InArgument<System.String> workflowPath { get; set; }
-
         public InArgument<System.Collections.Generic.Dictionary<System.String, System.Object>> wfArgs { get; set; }
-
         public System.Collections.Generic.IDictionary<string, object> newResult { get; set; }
 
         public BootloaderActivityChild()
